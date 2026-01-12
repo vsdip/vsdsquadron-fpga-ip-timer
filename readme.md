@@ -372,12 +372,13 @@ set_io LEDS[0] 39
 
 ### ONESHOT MODE
 
-**TIMER_LOADED**
-<img width="1162" height="183" alt="timer_clear_png" src="https://github.com/user-attachments/assets/76d8a85d-ffe3-47fb-9c45-dcd4c1304fc8" />
-**TIMER_DECREMENT & TIMEOUT_HIGH**
-<img width="1612" height="198" alt="timer_cleaar_decrementing" src="https://github.com/user-attachments/assets/067047e9-a845-4ad1-a56c-c9075d1f5467" />
-**TIMEOUT_RESET**
-<img width="1612" height="198" alt="timeout_reset" src="https://github.com/user-attachments/assets/2de73b79-b9fa-487b-a403-18459c2394cc" />
+**TIMER_LOAD**
+<img width="1598" height="375" alt="loadtimer" src="https://github.com/user-attachments/assets/78d8df5d-2b0a-4125-9f55-293c46e6f164" />
+**TIMER_DECREMENT**
+<img width="1598" height="375" alt="timerfunctioning" src="https://github.com/user-attachments/assets/1214b75b-402c-43f3-98ae-88e49b1c123d" />
+**TIMEOUT_HIGH**
+<img width="1317" height="114" alt="timeout_high_timer" src="https://github.com/user-attachments/assets/73b3097b-f7af-4423-b149-ebfbe626e3a7" />
+
 
 ### VIDEO
 - Hardware validation of the Timer IP showing correct timeout behavior.
