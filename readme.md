@@ -6,7 +6,6 @@
 
 <img width="646" height="436" alt="Screenshot 2026-01-12 214536" src="https://github.com/user-attachments/assets/866e3346-12d4-4ccb-9b89-1f8bd956d07a" />
 
----
 
 **The Timer IP is integrated as a memory-mapped peripheral, meaning the RISC-V processor communicates with it just like reading or writing to a specific addressin memory. The SoC uses an address decoder to send a "select" signal to the timer whenever the processor targets its specific address range. Inside the IP,four registers (CTRL, LOAD, VALUE, STATUS) allow the software to set a countdown time and enable the counter. Once started, the timer runs independently and sends a physical timeout_o signal back to the SoC hardware when it hits zero. This signal is wired directly to a toggle circuit that flips the state of an LED, providing a visible confirmation of the timer's operation.**
 
