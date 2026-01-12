@@ -1,0 +1,7 @@
+# Clock and reset (required)
+set_io CLK    35
+set_io RESET  34
+
+# External LED (connect LED here)
+set_io LEDS[0] 39
+
