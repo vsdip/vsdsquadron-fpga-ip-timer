@@ -156,7 +156,8 @@ While the Timer IP is intentionally general-purpose, certain limitations should 
 
 ---
 ## BLOCK DIAGRAM
-<img width="1236" height="2928" alt="image" src="https://github.com/user-attachments/assets/f020b3f0-2f65-457e-a70f-339234eda4cc" />
+<img width="646" height="436" alt="image" src="https://github.com/user-attachments/assets/c5cc46de-91a3-45fd-868b-b6f595c11de0" />
+
 
 ## Software Programming Model — Timer IP
 
