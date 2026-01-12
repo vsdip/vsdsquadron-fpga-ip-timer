@@ -2,6 +2,8 @@
 
 **In commercial SoC and FPGA designs, a hardware timer is a foundational infrastructure IP , it is essential for deterministic behavior, functional safety, power management, and long-term maintainability of complex systems.**
 
+---
+
 ## BLOCK DIAGRAM
 
 <img width="646" height="436" alt="Screenshot 2026-01-12 214536" src="https://github.com/user-attachments/assets/866e3346-12d4-4ccb-9b89-1f8bd956d07a" />
