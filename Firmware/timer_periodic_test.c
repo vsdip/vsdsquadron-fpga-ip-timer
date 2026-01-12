@@ -6,7 +6,7 @@
 
 int main(void)
 {
-    TIMER_LOAD = 12000000;
+    TIMER_LOAD = 20;
     TIMER_CTRL = (1 << 0) | (1 << 1); // EN=1, MODE=1
 
     while (1) {
