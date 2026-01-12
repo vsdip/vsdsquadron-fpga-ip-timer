@@ -6,9 +6,11 @@
 
 <img width="646" height="436" alt="Screenshot 2026-01-12 214536" src="https://github.com/user-attachments/assets/866e3346-12d4-4ccb-9b89-1f8bd956d07a" />
 
+---
 
-**The Timer IP is integrated as a memory-mapped peripheral, meaning the RISC-V processor communicates with it just like reading or writing to a specific address in memory. The SoC uses an address decoder to send a "select" signal to the timer whenever the processor targets its specific address range. Inside the IP, four registers (CTRL, LOAD, VALUE, STATUS) allow the software to set a countdown time and enable the counter. Once started, the timer runs independently and sends a physical timeout_o signal back to the SoC hardware when it hits zero. This signal is wired directly to a toggle circuit that flips the state of an LED, providing a visible confirmation of the timer's operation.**
+**The Timer IP is integrated as a memory-mapped peripheral, meaning the RISC-V processor communicates with it just like reading or writing to a specific addressin memory. The SoC uses an address decoder to send a "select" signal to the timer whenever the processor targets its specific address range. Inside the IP,four registers (CTRL, LOAD, VALUE, STATUS) allow the software to set a countdown time and enable the counter. Once started, the timer runs independently and sends a physical timeout_o signal back to the SoC hardware when it hits zero. This signal is wired directly to a toggle circuit that flips the state of an LED, providing a visible confirmation of the timer's operation.**
 
+---
 
 ##  Purposes 
 
@@ -371,11 +373,14 @@ set_io LEDS[0] 39
 ## Demo
 
 ### ONESHOT MODE
-
+- `load_reg` is written with the programmed value ```TIMER_LOAD = 100000``` in HEX it is ```0186A0``` observe this in waveform
+ 
 **TIMER_LOAD**
 <img width="1598" height="375" alt="loadtimer" src="https://github.com/user-attachments/assets/78d8df5d-2b0a-4125-9f55-293c46e6f164" />
+
 **TIMER_DECREMENT**
 <img width="1598" height="375" alt="timerfunctioning" src="https://github.com/user-attachments/assets/1214b75b-402c-43f3-98ae-88e49b1c123d" />
+
 **TIMEOUT_HIGH**
 <img width="1317" height="114" alt="timeout_high_timer" src="https://github.com/user-attachments/assets/73b3097b-f7af-4423-b149-ebfbe626e3a7" />
 
@@ -389,26 +394,37 @@ https://github.com/user-attachments/assets/ba42723f-88fe-45ac-ae99-935e401c3520
 
 ### RELOAD MODE
 
+- `load_reg` is written with the programmed value ```TIMER_LOAD = 20``` in HEX it is ```14``` observe this in waveform
+
 **TIMER LOADED**
 <img width="1597" height="191" alt="reload_timer_load" src="https://github.com/user-attachments/assets/f0952aa7-10a9-43aa-8009-a6a3cb5d3d14" />
+
 **TIMER DECREMENT**
 <img width="1597" height="191" alt="reload_timer_decrement" src="https://github.com/user-attachments/assets/14fa6f59-6fdd-480b-9702-0167ef03f908" />
+
 **TIMER RELOADED**
 <img width="1597" height="191" alt="reload_timer_reloaded" src="https://github.com/user-attachments/assets/ddca9c74-dece-4955-b13b-c2c0a487be0f" />
+
 **TIMER READBACK**
 <img width="1609" height="217" alt="reload_timer_readback" src="https://github.com/user-attachments/assets/35c47bf4-3b13-4bd1-b818-73b136d13d0d" />
+
 **TIMEOUT_TOGGLE**
 <img width="1057" height="194" alt="timeout_toggling" src="https://github.com/user-attachments/assets/9e63e4b8-f3d5-4f56-8832-c5a6f56d7581" />
 
 
 ### TIMEOUT CLEAR MODE
 
+-  `load_reg` is written with the programmed value ```TIMER_LOAD = 10``` in HEX it is ```0A``` observe this in waveform
+
 **TIMER_LOADED**
 <img width="1162" height="183" alt="timer_clear_png" src="https://github.com/user-attachments/assets/76d8a85d-ffe3-47fb-9c45-dcd4c1304fc8" />
+
 **TIMER_DECREMENT & TIMEOUT_HIGH**
 <img width="1612" height="198" alt="timer_cleaar_decrementing" src="https://github.com/user-attachments/assets/067047e9-a845-4ad1-a56c-c9075d1f5467" />
+
 **TIMEOUT_RESET**
 <img width="1612" height="198" alt="timeout_reset" src="https://github.com/user-attachments/assets/2de73b79-b9fa-487b-a403-18459c2394cc" />
+
 **LEDS**
 <img width="1075" height="444" alt="hardware proof" src="https://github.com/user-attachments/assets/d27ac662-9fac-4fee-87e6-12e5efb0a267" />
 
