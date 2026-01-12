@@ -1,4 +1,4 @@
-# Hardware Timer IP 
+#  VSDSQUADRON-FPGA-TIMER-IP 
 
 **In commercial SoC and FPGA designs, a hardware timer is a foundational infrastructure IP , it is essential for deterministic behavior, functional safety, power management, and long-term maintainability of complex systems.**
   
